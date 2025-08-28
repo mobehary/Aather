@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Readex+Pro:wght@160..700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Alexandria", sans-serif;
+  font-family: "El Messiri", sans-serif;
 }
 
 .overlay-background {
@@ -34,16 +34,15 @@
 }
 
 input[type=radio] {
-  accent-color: #333333;
+  accent-color: #19413F;
 }
 
 input[type=checkbox] {
-  accent-color: #333333;
+  accent-color: #19413F;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  filter: invert(1);
 }
 
 video[poster] {
@@ -62,43 +61,43 @@ a {
 }
 
 .text-primary {
-  color: #333333 !important;
+  color: #19413F !important;
 }
 
 .text-light-primary {
-  color: #E58411 !important;
+  color: #000000 !important;
 }
 
 .text-secondary {
-  color: #FFFFFF !important;
+  color: #FFA91F !important;
 }
 
 .text-acent {
-  color: #F8F8F8 !important;
+  color: #FFFFFF !important;
 }
 
 .text-default {
-  color: #A5A5A5 !important;
+  color: #333333 !important;
 }
 
 .bg-primary {
-  background-color: #333333 !important;
+  background-color: #19413F !important;
 }
 
 .bg-light-primary {
-  background-color: #E58411 !important;
+  background-color: #000000 !important;
 }
 
 .bg-secondary {
-  background-color: #FFFFFF !important;
+  background-color: #FFA91F !important;
 }
 
 .bg-acent {
-  background-color: #F8F8F8 !important;
+  background-color: #FFFFFF !important;
 }
 
 .bg-default {
-  background-color: #A5A5A5 !important;
+  background-color: #333333 !important;
 }
 
 .font-xxs {
@@ -232,11 +231,11 @@ a {
 }
 .nice-select ul.list li:hover {
   background-color: #D0D0D0 !important;
-  color: #333333;
+  color: #19413F;
 }
 .nice-select ul.list .selected {
   background-color: #D0D0D0 !important;
-  color: #333333;
+  color: #19413F;
 }
 .nice-select span.current {
   color: #adadad;
@@ -379,16 +378,28 @@ textarea::placeholder {
   font-size: 14px;
 }
 textarea option {
-  color: #FFFFFF;
+  color: #FFA91F;
 }
 
 p {
   line-height: 1.9;
 }
 
+.line-height-17 {
+  line-height: 1.7;
+}
+
+.line-height-18 {
+  line-height: 1.8;
+}
+
+.line-height-2 {
+  line-height: 2;
+}
+
 .form-control:focus {
   box-shadow: unset !important;
-  border-color: #333333;
+  border-color: #19413F;
 }
 
 .form-group {
@@ -400,7 +411,7 @@ section {
 }
 
 .main-title {
-  color: #333333;
+  color: #19413F;
   line-height: 2;
 }
 .main-title::after {
@@ -408,7 +419,7 @@ section {
   display: block;
   width: 25px;
   height: 2px;
-  background: #E58411;
+  background: #000000;
 }
 
 @media (max-width: 550px) {
@@ -545,4 +556,32 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #d2d2d2;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  transition: all 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #FFA91F;
+  transition: all 0.3s;
+}
+
+.main-btn {
+  background-color: #19413F;
+  color: #FFFFFF;
+  border-radius: 12px;
+  height: 48px;
+  min-width: 135px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s;
+  border: 1px solid #19413F;
+}
+.main-btn:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+  transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */
