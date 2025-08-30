@@ -1,5 +1,74 @@
 @import 'custom';
 
+
+#loader-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary-color;
+    z-index: 9999999999999999999999999999999;
+  }
+  
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    display: inline-block;
+    margin: -25px 0 0 -25px;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  #loader div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
+    animation: ballPulseDouble 2s ease-in-out infinite;
+    img{
+        height: 350px;
+        object-fit: contain;
+    }
+  }
+  
+  #loader div:last-child {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+  }
+  
+  @-webkit-keyframes ballPulseDouble {
+  
+    0%,
+    100% {
+        opacity: 1;
+    }
+  
+    50% {
+        opacity: 0.5;
+    }
+  }
+  
+  @keyframes ballPulseDouble {
+  
+    0%,
+    100% {
+        opacity: 1;
+    }
+  
+    50% {
+        opacity: 0.5;
+    }
+  }
+
+
 .navbar-nav{
     .nav-link{
         font-size: 16px;
@@ -21,14 +90,286 @@
     min-width: 135px;
     font-size: 16px;
     font-weight: 400;
-    transition: all 0.3s;
+    // transition: all 0.3s;
     border: 1px solid $primary-color;
     &:hover{
-        background-color: $acent-color;
-        color: $font-color;
-        transition: all 0.3s;
+        background: linear-gradient(90deg, #1E857D 0%, #3BB59E 100%);
+        border: 1px solid #3BB59E;
+        // transition: all 0.3s;
     }
 }
+
+.home-section{
+    padding-bottom: 0px !important;
+    h4{
+        img{
+            position: absolute;
+        }
+    }
+    .home-image{
+        border-radius: 18px;
+        height: 550px;
+        width: 90%;
+        object-fit: cover;
+    }
+    .shine-image{
+        position: absolute;
+        top: -35px;
+        right: 70px;
+    }
+}
+
+.about{
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+    background-color: $primary-color;
+    width: 100%;
+    .content{
+        padding-top: 80px;
+        .rectangle-div{
+            height: 475px;
+            width: 475px;
+            border: 5px solid $secondary-color;
+            border-radius: 50px 0px;
+            img{
+                position: absolute;
+                height: 280px;
+                width: 310px;
+                border-radius: 30px;
+                object-fit: cover;
+                &.image-1{
+                    top: -55px;
+                    left: -55px;
+                }
+                &.image-2{
+                    bottom: -55px;
+                    right: -55px;
+                }
+            }
+        }
+    }
+}
+.wave{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    &.top-wave{
+        background-image: url(../images/backgrounds/top-wave.png);
+        margin-top: -120px;
+    }
+    &.bottom-wave{
+        background-image: url(../images/backgrounds/bottom-wave.png);
+    }
+}
+
+.restaurants{
+    .restaurants-circle{
+        height: 600px;
+        width: 600px;
+        max-width: 97%;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/backgrounds/Aather-bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        animation: rotateCircle 30s linear infinite;
+        .logo{
+            height: 158px;
+            object-fit: contain;
+            animation: reverseCircle 30s linear infinite;
+        }
+        .restaurants-images{
+            position: absolute;
+            border: 1px solid $secondary-color;
+            height: 120px;
+            width: 120px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            h5{
+                color: $acent-color;
+                font-size: 16px;
+                font-weight: 600;
+                display: none;
+            }
+            &:hover{
+                background-blend-mode: multiply;
+                h5{
+                    display: block;
+                }
+            }
+        
+            animation: reverseCircle 30s linear infinite;
+            &.restaurant-1{
+                top: -55px;
+            }
+            &.restaurant-2{
+                top: 90px;
+                right: -15px;
+            }
+            &.restaurant-3{
+                bottom: 90px;
+                right: -15px;
+            }
+            &.restaurant-4{
+                bottom: -55px;
+            }
+            &.restaurant-5{
+                bottom: 90px;
+                left: -15px;
+            }
+            &.restaurant-6{
+                top: 90px;
+                left: -15px;
+            }
+        }
+    }
+}
+
+.introduction{
+    background-image: url(../images/backgrounds/communities-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .content{
+        height: 400px;
+        border-radius: 40px;
+        position: relative;
+        overflow: hidden;
+        .upper-leaf{
+            position: absolute;
+            top: 0;
+            left: 380px;
+        }
+        .lower-leaf{
+            position: absolute;
+            bottom: 0;
+            right: 380px;
+        }
+    }
+    .community-bg{
+        border-radius: 40px 0px 0px 40px;
+        height: 100%;
+    }
+}
+
+.communities{
+    .community-title{
+        margin-inline-start: 30px;
+        font-size: 32px;
+    }
+    .nav-pills{
+        gap: 8px;
+        .nav-link{
+            height: 50px;
+            border-radius: 10px;
+            color: $font-color;
+            font-size: 18px;
+            &.active{
+                background-color: $primary-color;
+                color: $acent-color;
+            }
+        }
+    }
+    .tab-content-div{
+        padding: 30px;
+        border-radius: 10px;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        min-height: 400px;
+    }
+    .tab-navigator {
+        gap: 10px;
+    }
+
+    .nav-dot {
+        display: inline-block;
+        width: 30px;
+        height: 4px;
+        background-color: #ddd;
+        border-radius: 2px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .nav-dot.active {
+        background-color: #19413f;
+    }
+}
+
+.footer{
+    background-color: $primary-color;
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #708988;
+        padding: 25px 0px;
+        .footer-logo{
+            height: 85px;
+            object-fit: contain;
+        }
+        .social-link{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: #EDF8F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            img{
+                height: 18px;
+                object-fit: contain;
+            }
+            &:hover{
+                background-color: $secondary-color;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .lower-div{
+        padding: 40px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// @keyframes rotateCircle {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+
+// @keyframes reverseCircle {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(-360deg);
+//     }
+// }
+
 
 
 @import 'enStyle';

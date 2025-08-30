@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,11 @@
 </head>
 
 <body>
-
+  <div id="loader-mask">
+    <div id="loader">
+        <div><img loading="lazy" src="assets/images/icons/footer-logo.svg" alt=""></div>
+    </div>
+  </div>
   <header class="home-header">
     <nav class="navbar navbar-expand-lg py-4">
       <div class="container">
@@ -69,7 +73,199 @@
     <div class="container">
       <div class="px-5">
         <h4 class="text-center text-light-primary font-4xl font-regular mb-4 fw-semibold">آثر هي <span class="text-secondary font-4xl font-regular">منصة فى الرياض</span>, المملكة العربية السعودية ,</h4>
-        <h4 class="text-center text-light-primary font-lg font-regular line-height-17 fw-normal">منصتنا وُجدت لتصنع فرقًا حقيقيًا؛ حيث نسعى لبناء مجتمع يقل فيه إهدار الطعام، ويزيد فيه العطاء. نؤمن أن كل وجبة يمكن أن تتحول من فائض إلى فرصة، ومن هدر إلى خير يصل لمستحقيه <img src="assets/images/icons/down-arrow.svg" alt="">.</h4>
+        <h4 class="text-center text-light-primary font-lg font-regular line-height-17 fw-normal position-relative">منصتنا وُجدت لتصنع فرقًا حقيقيًا؛ حيث نسعى لبناء مجتمع يقل فيه إهدار الطعام، ويزيد فيه العطاء. نؤمن أن كل وجبة يمكن أن تتحول من فائض إلى فرصة، ومن هدر إلى خير يصل لمستحقيه <img src="assets/images/icons/down-arrow.svg" alt="">.</h4>
+      </div>
+      <div class="position-relative mt-5 d-flex align-items-center justify-content-center px-5">
+        <img src="assets/images/icons/border-shine.svg" class="shine-image" alt="">
+        <img src="assets/images/home-image.jpg" class="home-image" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="wave top-wave"></div>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6 col-12 mb-3">
+            <h4 class="font-6xl text-acent">عن المؤسسة</h4>
+            <img src="assets/images/icons/underTitles.svg" class="d-block" alt="">
+            <div class="mt-2">
+              <p class="text-acent font-xl">
+                في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-3 d-flex align-items-center justify-content-center py-5">
+            <div class="rectangle-div position-relative">
+              <img src="assets/images/about-1.jpg" class="position-absolute image-1" alt="">
+              <img src="assets/images/about-2.jpg" class="position-absolute image-2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wave bottom-wave"></div>
+
+
+  <section class="restaurants" id="restaurants">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <h4 class="main-title">المطاعم</h4>
+        <img src="assets/images/icons/underTitles.svg" class="d-block" alt="">
+        <h5 class="mt-3 text-default">كونوا شركاء فى صناعة الأثر, وارفعوا قيمة علامتكم بالمشاركة فى المسؤولية الاجتماعية</h5>
+      </div>
+      <div class="restaurants-circle">
+        <img src="assets/images/favicon.svg" class="logo" alt="">
+        <div class="restaurants-images restaurant-1" style="background-image: url(assets/images/restaurant-1.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم صيني</h5>
+        </div>
+        <div class="restaurants-images restaurant-2" style="background-image: url(assets/images/restaurants-2.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم 2</h5>
+        </div>
+        <div class="restaurants-images restaurant-3" style="background-image: url(assets/images/restaurants-3.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم 3</h5>
+        </div>
+        <div class="restaurants-images restaurant-4" style="background-image: url(assets/images/restaurants-4.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم 4</h5>
+        </div>
+        <div class="restaurants-images restaurant-5" style="background-image: url(assets/images/restaurants-5.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم 5</h5>
+        </div>
+        <div class="restaurants-images restaurant-6" style="background-image: url(assets/images/restaurants-6.avif),linear-gradient(rgba(0,0,0,0.6))">
+          <h5>مطعم 6</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="introduction" id="introduction">
+    <div class="container">
+      <div class="content bg-primary">
+        <div class="row lg:h-100">
+          <div class="col-md-8 col-lg-6 col-12 h-100 mb-4 d-flex align-items-center justify-content-start">
+            <div class="px-5 md:mt-0 mt-5">
+              <h4 class="text-acent font-extra mb-4">منصة <span class="text-secondary font-extra">آثر</span></h4>
+              <h4 class="text-acent font-3xl mb-4 fw-normal">معاً.. نهدر أقل ونعطي أكثر</h4>
+              <p class="text-acent font-xxl mb-4 fw-normal">الأن مع تبرعكم الذي أثر بشكل فعَال فى تعزيز الاستدامة والترابط المجتمعي يمكننا المساهمة في دعم المحتاجين ومنع هدر الطعام</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-6 col-12 h-100 mb-4 d-flex align-items-center justify-content-end overflow-hidden">
+            <img src="assets/images/backgrounds/community-bg.png" class="community-bg" alt="">
+          </div>
+        </div>
+        <img src="assets/images/backgrounds/upper-leaf.png" class="upper-leaf" alt="">
+        <img src="assets/images/backgrounds/lower-leaf.svg" class="lower-leaf" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="communities" id="communities">
+    <div class="container">
+      <div class="d-flex flex-column lg:align-items-start align-items-center mb-lg-4">
+        <h4 class="community-title">الجمعيات</h4>
+        <img src="assets/images/icons/underTitles.svg" class="d-block" alt="">
+      </div>
+      <div class="row gap-x-3">
+        <div class="col-md-5 col-lg-5 col-12 mb-4">
+          <p class="text-default font-regular my-4 fw-normal md:text-start text-center">
+            بوجود الكثير من الجمعيات التي انضمت إلينا لتوسيع شبكة الدعم وتسهيل حصولكم على التبرعات الغذائية
+          </p>
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link w-50 active" id="v-pills-first-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first" type="button" role="tab" aria-controls="v-pills-first" aria-selected="true">شارك لقمتك</button>
+            <button class="nav-link w-50" id="v-pills-second-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second" type="button" role="tab" aria-controls="v-pills-second" aria-selected="false">لقمة خير</button>
+            <button class="nav-link w-50" id="v-pills-third-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third" type="button" role="tab" aria-controls="v-pills-third" aria-selected="false">موائد الرحمة</button>
+            <button class="nav-link w-50" id="v-pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fourth" type="button" role="tab" aria-controls="v-pills-fourth" aria-selected="false">دفء ولقمة</button>
+            <button class="nav-link w-50" id="v-pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fifth" type="button" role="tab" aria-controls="v-pills-fifth" aria-selected="false">بسمة جائع</button>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-7 col-12 mb-4">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
+              <div class="tab-content-div" style="background-image: url(assets/images/about-2.jpg),linear-gradient(rgba(25, 65, 63, 0.4))">
+                <h4 class="text-secondary font-4xl mb-3">شارك لقمتك</h4>
+                <p class="text-acent line-height-18">في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-second" role="tabpanel" aria-labelledby="v-pills-second-tab">
+              <div class="tab-content-div" style="background-image: url(assets/images/about-1.jpg),linear-gradient(rgba(25, 65, 63, 0.4))">
+                <h4 class="text-secondary font-4xl mb-3">لقمة خير</h4>
+                <p class="text-acent line-height-18">في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-third" role="tabpanel" aria-labelledby="v-pills-third-tab">
+              <div class="tab-content-div" style="background-image: url(assets/images/about-2.jpg),linear-gradient(rgba(25, 65, 63, 0.4))">
+                <h4 class="text-secondary font-4xl mb-3">موائد الرحمة</h4>
+                <p class="text-acent line-height-18">في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel" aria-labelledby="v-pills-fourth-tab">
+              <div class="tab-content-div" style="background-image: url(assets/images/about-1.jpg),linear-gradient(rgba(25, 65, 63, 0.4))">
+                <h4 class="text-secondary font-4xl mb-3">دفء ولقمة</h4>
+                <p class="text-acent line-height-18">في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">
+              <div class="tab-content-div" style="background-image: url(assets/images/about-2.jpg),linear-gradient(rgba(25, 65, 63, 0.4))">
+                <h4 class="text-secondary font-4xl mb-3">بسمة جائع</h4>
+                <p class="text-acent line-height-18">في عالم يزداد فيه إنتاج الطعام يومًا بعد يوم، ما زال هناك من يعاني من الجوع، وما زال الهدر يلتهم كميات هائلة من الغذاء. من هنا جاءت منصتنا لتقدم حلًا إنسانيًا وعمليًا في آن واحد. نحن نؤمن أن كل وجبة فائضة يمكن أن تكون يد عون لأسرة محتاجة، وكل طبق زائد يمكن أن يتحول إلى عطاء يغير حياة أحدهم. هدفنا هو بناء مجتمع واعٍ يقل فيه إهدار الطعام، ويزدهر فيه روح التكافل، حيث يتحول الهدر من عبء إلى فرصة للخير. مع منصتنا، لن يكون الطعام الزائد نهاية، بل بداية لعطاء مستدام يترك أثرًا حقيقيًا.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-navigator d-flex justify-content-center mt-4">
+        <span class="nav-dot active" data-index="0"></span>
+        <span class="nav-dot" data-index="1"></span>
+        <span class="nav-dot" data-index="2"></span>
+        <span class="nav-dot" data-index="3"></span>
+        <span class="nav-dot" data-index="4"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="content">
+        <img src="assets/images/icons/footer-logo.svg" class="footer-logo" alt="">
+        <div>
+          <ul class="d-flex align-items-center justify-center list-unstyled gap-4">
+            <li>
+              <a class="text-acent font-regular" href="#home">الرئيسية</a>
+            </li>
+            <li>
+              <a class="text-acent font-regular" href="#about">عن المؤسسة</a>
+            </li>
+            <li>
+              <a class="text-acent font-regular" href="#restaurants">المطاعم</a>
+            </li>
+            <li>
+              <a class="text-acent font-regular" href="#communities">الجمعيات</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-acent font-normal fw-normal mb-3">تابعنا على:</h4>
+          <div class="d-flex align-items-center justify-center list-unstyled gap-4">
+            <a href="#" class="social-link">
+              <img src="assets/images/icons/instagram.svg" alt="">
+            </a>
+            <a href="#" class="social-link">
+              <img src="assets/images/icons/snapchat.svg" alt="">
+            </a>
+            <a href="#" class="social-link">
+              <img src="assets/images/icons/tiktok.svg" alt="">
+            </a>
+            <a href="#" class="social-link">
+              <img src="assets/images/icons/facebook.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="lower-div">
+        <h4 class="text-acent text-center font-regular">جميع الحقوق محفوظة لدى آثر © 2025</h4>
       </div>
     </div>
   </section>

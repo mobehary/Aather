@@ -7,10 +7,10 @@
 }
 
 @media(max-width: 550px) {
-
+    
 }
 @media(max-width: 767px) {
-
+    
 }
 
 @media(min-width: 350px) and (max-width: 767px){
@@ -22,7 +22,93 @@
 }
 
 @media(max-width: 990px){
-
+    .home-section{
+        .home-image{
+            height: 250px;
+        }
+        .shine-image{
+            right: 25px;
+        }
+    }
+    .about{
+        .content{
+            .rectangle-div{
+                height: 360px;
+                img{
+                    height: 220px;
+                    width: 220px;
+                    &.image-1{
+                        left: -10px;
+                    }
+                    &.image-2{
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .restaurants{
+        .restaurants-circle{
+            height: 360px;
+            .logo{
+                height: 80px;
+            }
+            .restaurants-images{
+                height: 80px;
+                width: 80px;
+                &.restaurant-1{
+                    top: -40px;
+                }
+                &.restaurant-2{
+                    top: 55px;
+                    right: -15px;
+                }
+                &.restaurant-3{
+                    bottom: 55px;
+                    right: -15px;
+                }
+                &.restaurant-4{
+                    bottom: -40px;
+                }
+                &.restaurant-5{
+                    bottom: 55px;
+                    left: -15px;
+                }
+                &.restaurant-6{
+                    top: 55px;
+                    left: -15px;
+                }
+            }
+        }
+    }
+    .introduction{
+        .content{
+            height: fit-content;
+            .lower-leaf{
+                display: none;
+            }
+            .upper-leaf{
+                display: none;
+            }
+        }
+        .community-bg{
+            display: none;
+        }
+    }
+    .footer{
+        .content{
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .communities{
+        .nav-pills{
+            align-items: center;
+        }
+        .community-title{
+            margin: 0;
+        }
+    }
 }
 
 @media(min-width: 768px) and (max-width: 990px){

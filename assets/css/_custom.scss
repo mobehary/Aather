@@ -130,8 +130,14 @@ a{
 .font-4xl{
     font-size: 32px;
 }
-.font-extra{
+.font-5xl{
     font-size: 36px;
+}
+.font-6xl{
+    font-size: 40px;
+}
+.font-extra{
+    font-size: 48px;
 }
 .fw-xxs{
     font-weight: 100;
@@ -330,7 +336,6 @@ textarea{
 p{
     @extend .fw-normal;
     @extend .font-normal;
-    line-height: 1.9;
 }
 .line-height-17{
     line-height: 1.7;
@@ -355,17 +360,9 @@ section{
 }
 
 .main-title{
-    color: $primary-color;
-    @extend .font-xxl;
-    @extend .fw-lg;
-    line-height: 2;
-    &::after {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: $light-primary-color;
-    }
+    color: $light-primary-color;
+    @extend .font-3xl;
+    @extend .fw-regular;
 }
 
 
@@ -498,13 +495,13 @@ section{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #E6E6E6;
+    background: $primary-color;
     border-radius: 15px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #d2d2d2;
+    background: $secondary-color;
   }
 
 @media(min-width: 551px) and (max-width: 990px){
