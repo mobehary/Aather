@@ -22,6 +22,12 @@
 }
 
 @media(max-width: 990px){
+    #loader div {
+        img{
+            height: 150px;
+            object-fit: contain;
+        }
+    }
     .home-section{
         .home-image{
             height: 250px;
